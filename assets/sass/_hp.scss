@@ -1,0 +1,257 @@
+
+/*	Use nesting */
+
+/*
+$sans-serif: "freight-sans-pro", Helvetica;
+$serif: "grad", Georgia;
+*/
+
+.u-pageHome {
+
+	/*	Layout
+		------ */
+
+	body {
+		max-width: 60em;
+	}
+
+	.Module--contact.Module--sidebar {
+		display: none;
+	}
+	.u-Masthead__siteName {
+		margin-top: 4em;
+		margin-top: 47vw;
+		text-align: center;
+	}
+	.u-lHeader {
+		padding-top: 3em;
+	}
+	
+	
+	@media (min-width: $small) {
+
+		.u-lHeader {
+			margin-top: 15em;
+			padding: 0;
+			padding-top: 2em;
+			position: relative;
+		}
+		.u-Masthead__siteName {
+			margin-top: 0;
+		}
+		.u-Masthead__siteName--link {
+			position: relative;
+			z-index: 10;
+		}
+		.u-Masthead__vassar {
+			position: absolute;
+		}
+		.u-NavSite .icon-facebook svg {
+			float: right;
+			margin-right: 0;
+			margin-left: .5em;
+		}
+		.u-Search {
+			margin-top: -14em;
+			right: 1em;
+		}
+		.u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item:hover,
+		.u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item:visited:hover {
+			color: #fff;
+		}
+
+	}
+
+	@media (min-width: $medium) {
+		.u-NavSite {
+			width: 24%;
+		}
+		.u-lMain {
+			padding-left: 0;
+			width: 75%;
+		}
+		.u-lContent {
+			padding-right: 2%;
+		}
+	}
+
+	
+
+	/*	Color
+		----- */
+
+	& {
+		min-height: 100%;
+		background-image: url(http://history.vassar.edu/assets/images/css/hp-array.jpg), url(http://history.vassar.edu/assets/images/css/bg.jpg);
+		background-position: center 2em, top center;
+		background-repeat: no-repeat, repeat;
+		background-size: 150%;
+	}
+	
+	.ac-NavAnchor.ac-NavAnchor--top {
+		color: #fff;
+		border: none;
+	}
+	.ac-NavAnchor.ac-NavAnchor--top:hover {
+		color: #D9D3A5;
+	}
+	
+	.u-NavSite__item,
+	.u-NavSite__item:visited {
+		color: #80a2a8;
+	}
+	.u-NavSite__level--1 .u-NavSite__itemContainer .u-NavSite__item:hover,
+	.u-NavSite__level--1 .u-NavSite__itemContainer .u-NavSite__item:visited:hover {
+		color: #fff;
+	}
+	
+	
+	body,
+	body:after {
+		background: none;
+	}
+	body {
+		box-shadow: none;
+		text-shadow: none;
+	}
+	.u-lContent a,
+	.u-lContent a:visited {
+		color: #fff;
+		border: none;
+	}
+	.u-lContent a:hover,
+	.u-lContent a:visited:hover {
+		color: #F2EECE;
+	}
+	.u-lContent p {
+		color: #D9D3A5;
+	}
+	.u-lFooter {
+		border-top: 3px double rgba(255,255,255,.2);
+		color: #BFB491;
+	}
+	.u-VCard--site a,
+	.u-VCard--site a:visited {
+		color: #FFF2CC !important;
+		border-bottom: none;
+	}
+	.u-VCard--site a:hover,
+	.u-VCard--site a:visited:hover {
+		color: #fff !important;
+	}
+	.Module--sidebar.Module--news .Module__link,
+	.Module--sidebar.Module--news .Module__link:visited,
+	.Module--sidebar.Module--news .Module__headerLink,
+	.Module--sidebar.Module--news .Module__headerLink:visited,
+	.moreLink {
+		color: #80a2a8;
+	}
+	.Module--sidebar.Module--news .Module__link:hover,
+	.Module--sidebar.Module--news .Module__link:visited:hover,
+	.Module--sidebar.Module--news .Module__headerLink:hover,
+	.Module--sidebar.Module--news .Module__headerLink:visited:hover,
+	.moreLink:hover {
+		color: #fff;
+	}
+
+	.u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent {
+		color: #fff;
+	}
+
+	@media (min-width: $small) {
+
+		& {
+			background-position: center -4em, top center;
+			background-size: auto;
+		}
+		.u-Masthead__siteName--link,
+		.u-Masthead__siteName--link:visited {
+		    color: #f2eecc;
+		}
+		.u-Masthead__siteName--link:hover,
+		.u-Masthead__siteName--link:visited:hover {
+			color: #fff;
+		}
+		.u-Masthead__vassar--link,
+		.u-Masthead__vassar--link:visited {
+			color: #7fa2a8;
+		}
+		.u-Masthead__vassar--link:hover,
+		.u-Masthead__vassar--link:visited:hover {
+			color: #fff;
+		}
+		.u-Masthead__siteName {
+			text-shadow: 0 1px 2px #000;
+		}
+		.u-NavSite__item {
+			color: #80a2a8;
+		}
+		.u-NavSite__item:hover {
+			color: #fff;
+		}
+	}
+	
+	@media (min-width: $medium) {
+		& {
+			background-size: auto;
+		}
+	}
+		
+	
+	/*	Typography
+		---------- */
+	
+	.u-lContent p {
+		font-family: $serif;
+		font-size: 1.1em;
+		-webkit-font-smoothing: antialiased;
+	}
+	.Module--sidebar.Module--news {
+		.Module__headerLink	{
+			text-transform: uppercase;
+			font-size: .8em;
+			letter-spacing: .1em;
+   		}
+		.Module__link {
+			font-family: $sans-serif;
+			font-size: 1em;
+		}
+		.moreLink {
+			font-family: $sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	
+	@media (min-width: $small) {
+	
+		.u-lHeader {
+			text-align: center;
+		}
+		.u-Masthead__siteName--link {
+		    font-family: "baskerville-urw";
+		    font-family: "bodoni-urw";
+		    -webkit-font-smoothing: antialiased;
+		}
+		.u-Masthead__vassar {
+			font-family: "bickham-script-pro";
+			font-size: 3em;
+		}
+		.u-Masthead__vassar--link {
+			font-size: inherit;
+		}
+		.u-Masthead__siteName {
+		    font-size: 5em;
+		    font-weight: 100;
+		}
+		.u-NavSite__itemContainer {
+			text-align: right;
+		}
+	}
+	
+	@media (min-width: $medium) {
+	
+	}
+	
+	
+}

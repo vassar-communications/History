@@ -1,0 +1,294 @@
+
+/*	Typography
+	========== */
+
+/*	Footer
+	------ */
+
+.u-VCard__org {
+	font: $u-VCard__org--font !important;
+}
+.u-VCard--site .u-VCard__item, .u-VCard--site .u-VCard__info, .u-VCard--site .u-List--site, .u-VCard--site .u-List__item {
+	font-size: $u-lFooter--fontSize;
+}
+
+
+/*	Bios
+	---- */
+
+.u-biosInner .u-pageTitle {
+	margin-bottom: .125em;
+}
+.u-Bio__title {
+	font: $u-Bio__title--font;
+	color: $u-Bio__title--color;
+}
+
+
+
+/*	Modules
+	------- */
+
+.modulesArea {
+	.Module__header {
+		font: $mainContentModule__header--font;
+		margin-top: 0;
+	}
+	.Module {
+		p {
+			font: $mainContentModule--font;
+		}
+	}
+}
+.Module--sidebar {
+	.Module__listItem:last-of-type {
+		margin-bottom: .5em;
+	}
+	.Module__header {
+		margin-bottom: .5em;
+	}
+	.Module__name {
+		margin-top: 0;
+	}
+}
+
+
+
+
+/*	Layout
+	====== */
+
+/*	General
+	------- */
+
+th {
+	vertical-align: bottom;
+	padding-bottom: .5em;
+	/*	Example: http://cmspreview.vassar.edu/english/web/courses/requirements.html */
+}
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+/*	Breadcrumb
+	---------- */
+
+.u-BreadCrumbs {
+	display: block; /* inline-block seems to make it collapse on iOS */
+}
+
+
+/*	Modules
+	------- */
+
+.u-lContent {
+	.Module--note.Module--fullWidth {
+		padding: 4%;
+	}
+}
+
+
+
+
+/*	FAQs
+	---- */
+
+.faq__item {
+    margin-bottom: 2em;
+}
+
+
+/*	Footer
+	------ */
+
+.u-VCard__info,
+.u-List--site {
+	margin: .25em;
+}
+.u-VCard__org {
+	display: inline-block;
+	margin-bottom: .5em;
+}
+
+
+/*	News
+	---- */
+
+.news-presscontact-email .icon-envelope {
+	display: none;
+}
+
+
+/*	Color
+	===== */
+
+
+/*	Modules
+	------- */
+
+.u-lContent {
+	.Module--note.Module--fullWidth {
+		background: #DCF4F5;
+		border-top: 2px solid #79C3C7;
+	}
+}
+.u-lAside {
+	.u-Figure {
+		margin: 0;
+		margin-bottom: 1.25em;
+	}
+}
+
+
+
+
+/*	News
+	---- */
+
+.u-ArticleListItem__link:link,
+.u-ArticleListItem__link:visited,
+.u-ArticleListItem__link:hover {
+	border: none;
+}
+.u-ArticleListItem {
+	margin-bottom: 1em;
+}
+.u-lContent .u-ArticleListItem__summary {
+	margin-bottom: 0;
+}
+.u-ArticleListItem__label--externalLink {
+	margin-left: .5em;
+	position: relative;
+}
+.u-ArticleListItem__label--externalLink:before {
+	content: "·";
+	margin-right: .5em;
+}
+
+
+/*	Breadcrumb
+	---------- */
+
+	.u-BreadCrumbs__item:before {
+		border-left-color: $u-BreadCrumbs__item__separator;
+	}
+
+
+/*	Footer
+	------ */
+
+.u-lFooter a {
+	color: $u-VCard__site--linkColor;
+}
+.u-lFooter a:hover,
+.u-lFooter a:visited:hover {
+	color: $u-VCard__site--linkColorHoverFocus;
+}
+
+
+/*	Navigation
+	---------- */
+
+#navigation:target {
+	.u-NavSite__level {
+		border-left-color: $u-NavSite__level--mobileBorderColor;
+	}
+	.u-NavSite__level--1 > .u-NavSite__itemContainer > {
+		.u-NavSite__item:hover,
+		.u-NavSite__item:visited:hover {
+			color: $u-NavSite__level--1--mobileColor--hover;
+		}
+		.u-NavSite__item.u-NavSite__item--isCurrent {
+			color: $u-NavSite__level--1--mobileColor--open;
+		}
+	}
+	.u-NavSite__level--2 .u-NavSite__itemContainer > {
+		.u-NavSite__item:hover,
+		.u-NavSite__item:visited:hover {
+			color: $u-NavSite__level--X--mobileColor--hover;
+		}
+		.u-NavSite__item.u-NavSite__item--isCurrent {
+			color: $u-NavSite__level--X--mobileColor--open;
+		}
+	}
+}
+
+	.u-NavSite__level--1 > .u-NavSite__itemContainer > {
+		.u-NavSite__item:hover,
+		.u-NavSite__item:visited:hover {
+			color: $u-NavSite__level--1--color--hover;
+		}
+		.u-NavSite__item.u-NavSite__item--isCurrent {
+			color: $u-NavSite__level--1--color--open;
+		}
+	}
+	.u-NavSite__level {
+		border-left-color: $u-NavSite__level--borderColor;
+	}
+	.u-NavSite__level--2 .u-NavSite__itemContainer > {
+		.u-NavSite__item:hover,
+		.u-NavSite__item:visited:hover {
+			color: $u-NavSite__level--X--color--hover;
+		}
+		.u-NavSite__item.u-NavSite__item--isCurrent {
+			color: $u-NavSite__level--X--color--open;
+		}
+	}
+
+.u-NavSite svg {
+	fill: $u-Menu__close--iconColor;
+}
+.u-NavSite svg:hover {
+	fill: $u-Menu__close--iconColorHoverFocus;
+}
+
+
+
+
+/*	Search
+	------ */
+
+.u-Search__cancel svg {
+	fill: $u-Search__close--iconColor;
+}
+.u-Search__cancel svg:hover {
+	fill: $u-Search__close--iconColorHoverFocus;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+
+
+
+/* ====================
+   COLOR 
+   ==================== */
+
+a { 
+	border-bottom: 1px dashed #dadbad;
+	padding-bottom: 0;
+}
+a:visited {
+	color: #9C6262;
+}
+body {
+	background: #F5F4DC;
+	box-shadow: 0 1px 40px black, inset 0 0 50px #deda94;
+}
+.Module--sidebar .Module__listItem {
+    border-top: 1px solid #dadbad;
+}
+.u-NavSite__level {
+    border-left-color: #dadbad;
+}
+.u-lContent {
+	h2 a, h3 a, h4 a, h5 a, h6 a {
+		border: none;
+		color: #000;
+	}
+}
+
+@media screen and (min-width: $small) {
+
+
+html {
+  /*position: fixed;*/
+  background: #271501 url("../images/css/bg.jpg") top center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -21;
+  box-shadow: inset 0 0 200px #201205, inset 0 0 200px #201205, inset 0 0 200px #201205;
+  -webkit-box-shadow: inset 0 0 200px #201205, inset 0 0 200px #201205, inset 0 0 200px #201205;
+  -moz-box-shadow: inset 0 0 200px #201205, inset 0 0 200px #201205, inset 0 0 200px #201205;
+}
+
+body {
+  text-shadow: 0 1px 1px #fff;
+}
+
+body {
+    background-image: url("../images/css/footer-left.png"), url("../images/css/footer-right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -2px 100%, 101% 100%;
+  }
+body:after {
+    content: "";
+    background: url("../images/css/header-vassar.png") no-repeat;
+    position: absolute;
+    top: -5px;
+    right: -21px;
+    width: 228px;
+    height: 240px;
+    z-index: 1;
+  }
+.u-Search {
+    z-index: 2;
+    border-bottom: 1px solid #dadbad;
+}
+
+.u-LFooter {
+  background: url("../images/css/footer-bg.jpg") no-repeat top center;
+}
+
+.u-VCard--site .u-VCard__org {
+	font-family: "grad";
+    color: #aa0000;
+	font-size: 1.2em;
+}
+.u-VCard--site a {
+    border-bottom: 1px dashed #dadbad;
+}
+
+.u-VCard__adr {
+	
+	padding-top: .2em;
+}
+
+.u-VCard--site .u-List--site a {
+	font-family: "grad";
+    color: #aa0000;
+	text-transform: uppercase;
+	font-size: .8em;
+	letter-spacing: .1em;
+}
+.u-VCard--site .u-List--site a:hover, 
+.u-VCard--site .u-VCard__org:hover { 
+	color: #80a2a8;
+}
+}
+
+
+
+/*	Masthead
+	-------- */
+
+@media screen and (min-width: $small) {
+	.u-Masthead__siteName {
+		border-bottom: 1px solid #dadbad;
+		display: inline-block;
+		padding-bottom: .25em;
+		margin-bottom: .25em;
+	}
+	.u-Masthead__siteName--link,
+	.u-Masthead__siteName--link:visited {
+		color: #444;
+	}
+	.u-Masthead__siteName--link:hover,
+	.u-Masthead__siteName--link:visited:hover {
+		color: #a00;
+	}
+}
+
+.u-lFooter a,
+.u-lFooter a:visited {
+	color: #a00 !important;
+	border: none;
+}
+
+
