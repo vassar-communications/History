@@ -1,0 +1,18 @@
+@media (min-width: 37.5em){
+    .g-.u-pageHome .u-lHeader{
+        margin-top:7.65em
+    }
+    body:after{
+        background:none
+    }
+    .u-pageInner.g- .PageContent:after{
+        content:"";
+        background:url(../images/css/header-vassar.png) no-repeat;
+        position:absolute;
+        top:-5px;
+        right:-21px;
+        width:228px;
+        height:240px;
+        z-index:1
+    }
+}
