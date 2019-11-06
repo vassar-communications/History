@@ -16,6 +16,19 @@ body {
 	background: #F5F4DC;
 	box-shadow: 0 1px 40px black, inset 0 0 50px #deda94;
 }
+
+.gf-.u-pageInner body
+{
+    background: none;
+    box-shadow: none;
+}
+
+.gf-.u-pageInner .PageContent
+{
+	background: #F5F4DC;
+	box-shadow: 0 1px 40px black, inset 0 0 50px #deda94;    
+}
+
 .Module--sidebar .Module__listItem {
     border-top: 1px solid #dadbad;
 }

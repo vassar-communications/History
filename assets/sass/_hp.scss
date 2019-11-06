@@ -6,16 +6,28 @@ $sans-serif: "freight-sans-pro", Helvetica;
 $serif: "grad", Georgia;
 */
 
-.u-pageHome {
 
 	/*	Layout
 		------ */
 
-	body {
+	.u-pageHome body
+    {
 		max-width: 60em;
 	}
 
-	.Module--contact.Module--sidebar {
+	.u-pageHome.gf- body
+    {
+		max-width: none;
+	}
+
+    .u-pageHome.gf- .PageContent
+    {
+    	max-width: 60em;
+    }
+
+.u-pageHome {
+
+    .Module--contact.Module--sidebar {
 		display: none;
 	}
 	.u-Masthead__siteName {
@@ -26,7 +38,6 @@ $serif: "grad", Georgia;
 	.u-lHeader {
 		padding-top: 3em;
 	}
-	
 	
 	@media (min-width: $small) {
 
@@ -74,7 +85,6 @@ $serif: "grad", Georgia;
 			padding-right: 2%;
 		}
 	}
-
 	
 
 	/*	Color
@@ -104,7 +114,6 @@ $serif: "grad", Georgia;
 	.u-NavSite__level--1 .u-NavSite__itemContainer .u-NavSite__item:visited:hover {
 		color: #fff;
 	}
-	
 	
 	body,
 	body:after {
@@ -248,10 +257,4 @@ $serif: "grad", Georgia;
 			text-align: right;
 		}
 	}
-	
-	@media (min-width: $medium) {
-	
-	}
-	
-	
 }
